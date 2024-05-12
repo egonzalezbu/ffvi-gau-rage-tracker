@@ -1,0 +1,642 @@
+[
+    [
+        "Silver Lobo",
+        "Silver Lobo x2",
+        "Guard x2",
+        "Foper x2, Urok",
+        "Silver Lobo x2, Guard Leader",
+        "Hornet x2, Foper x3",
+        "Leaf Bunny",
+        "Leaf Bunny x2, Darkwind"
+    ],
+    [
+        "Leaf Bunny x2, Darkwind x2",
+        "Sand Ray, Alacran x3",
+        "Sand Ray x2",
+        "Alacran x3",
+        "Sand Ray, Alacran x2",
+        "Hornet x2",
+        "Wererat x3",
+        "Hornet, Urok x2"
+    ],
+    [
+        "Gorgias x2",
+        "Megalodoth, Silver Lobo",
+        "Urok x3",
+        "Belmodar",
+        "Belmodar, Mu x2",
+        "Mu x2, Unseelie",
+        "Belmodar, Unseelie, Mu x2",
+        "Unseelie x2"
+    ],
+    [
+        "Mu x4",
+        "Imperial Soldier x2, Magitek Armor",
+        "Bandit, Spritzer",
+        "Magitek Armor",
+        "Trillium, Gorgias, Cirpius x2",
+        "Cirpius x3",
+        "Trillium x2",
+        "Gorgias, Cirpius x3"
+    ],
+    [
+        "Zaghrem x2",
+        "Zaghrem, Trillium, Spritzer x2",
+        "Magitek Armor x2",
+        "Lesser Lopros x2",
+        "Zombie Dragon x2",
+        "Nautiloid, Exocite, Lesser Lopros",
+        "Nautiloid, Exocite",
+        "Lesser Lopros, Exocite x2"
+    ],
+    [
+        "None",
+        "Silver Lobo, Guard x2",
+        "None",
+        "None",
+        "Wererat, Bandit",
+        "Wererat x2",
+        "Doberman x2",
+        "Actinian x3"
+    ],
+    [
+        "None",
+        "Stray Cat x3",
+        "Nettlehopper x2, Stray Cat x2",
+        "Nettlehopper x3",
+        "Chippirabbit x5",
+        "Aepyornis",
+        "Aepyornis x2, Stray Cat",
+        "Aepyornis, Chippirabbit x2"
+    ],
+    [
+        "Chippirabbit x3",
+        "Aepyornis, Stray Cat, Nettlehopper x2",
+        "None",
+        "None",
+        "None",
+        "Satellite, Imperial Soldier x4",
+        "Doberman x3",
+        "None"
+    ],
+    [
+        "Heavy Armor",
+        "Ghost",
+        "Ghost x3",
+        "Actinian x3, Aspiran x2",
+        "Ghost, Poplium x2",
+        "Ghost x2, Poplium x3",
+        "Angel Whisper x2, Cloud",
+        "Spritzer x2"
+    ],
+    [
+        "Bomb x2, Cloud x2",
+        "Provoker x2, Lich x2",
+        "Angel Whisper x4",
+        "Oversoul x2",
+        "Bomb x3",
+        "Bomb",
+        "Oversoul, Living Dead x2",
+        "None"
+    ],
+    [
+        "Angel Whisper, Living Dead, Cloud x2",
+        "Angel Whisper, Cloud x3",
+        "Anguiform",
+        "Anguiform x2",
+        "Megalodoth x2, Guard x2",
+        "Living Dead x3",
+        "Anguiform, Actinian, Aspiran",
+        "Hell's Rider"
+    ],
+    [
+        "Heavy Armor, Corporal x2",
+        "Fidor, Corporal",
+        "Angel Whisper",
+        "Corporal x4",
+        "Hunting Hound, Corporal x2",
+        "Fossil Dragon",
+        "Bloodfang x2",
+        "Paraladia, Vulture, Iron Fist"
+    ],
+    [
+        "Iron Fist x2, Rock Wasp x2",
+        "Bloodfang x2, Vulture",
+        "Paraladia x2, Rock Wasp x3",
+        "Vulture x2",
+        "Vulture, Iron Fist",
+        "Rock Wasp x4",
+        "Hill Gigas",
+        "Crawler"
+    ],
+    [
+        "Gobbledygook x4",
+        "Veil Dancer",
+        "Veil Dancer, Gobbledygook x3",
+        "Harvester",
+        "Veil Dancer, Harvester x2",
+        "Harvester, Gobbledygook x2",
+        "Hill Gigas, Harvester",
+        "Magna Roader (Purple)"
+    ],
+    [
+        "Goetia, Stunner x2",
+        "Stunner x3, Goetia x2",
+        "Crawler x4",
+        "Belzecue x2, Sergeant x2",
+        "Belzecue x2, Sergeant",
+        "Magna Roader (Purple), Magna Roader (Red)",
+        "Trapper x3",
+        "General x2"
+    ],
+    [
+        "General, Onion Knight x2",
+        "Onion Knight x4",
+        "Chaser, Trapper x3",
+        "Chaser, Onion Knight x3",
+        "Lenergia",
+        "Commander x3",
+        "Death Warden",
+        "None"
+    ],
+    [
+        "Lukhavi x2",
+        "None",
+        "None",
+        "None",
+        "Murussu, Baalzephon",
+        "None",
+        "Desert Hare x3",
+        "Bomb"
+    ],
+    [
+        "Bomb x6",
+        "Io",
+        "Cancer x3",
+        "Fossil Dragon x2",
+        "Fossil Dragon, Bug x3",
+        "Bug x3",
+        "Bug x6",
+        "Don x2"
+    ],
+    [
+        "Don, Wyvern x2",
+        "Don, Wyvern, Litwor Chicken x2",
+        "Grasswyrm x3",
+        "Don, Joker",
+        "Joker x3",
+        "Litwor Chicken x5",
+        "Zombie Dragon",
+        "Zombie Dragon, Outcast x2"
+    ],
+    [
+        "Outcast x3",
+        "Provoker x2",
+        "Antares x3",
+        "Lich, Provoker, Antares",
+        "Lich x3",
+        "Imperial Elite x3",
+        "Balloon x3",
+        "Balloon x6"
+    ],
+    [
+        "Briareus",
+        "Chimera",
+        "Devourer, Briareus",
+        "Devourer x3",
+        "Adamankary, Bonnacon x2",
+        "Adamankary x2",
+        "Bonnacon x5",
+        "Mandrake x3"
+    ],
+    [
+        "Mandrake, Land Grillon x2",
+        "Venobennu x2",
+        "Gigantos",
+        "None",
+        "None",
+        "None",
+        "Gigantos x2",
+        "Sky Armor x2, Spitfire"
+    ],
+    [
+        "Sky Armor, Spitfire",
+        "Behemoth",
+        "Apocrypha, Misfit x2",
+        "Apocrypha",
+        "Ninja x2",
+        "Platinum Dragon x3",
+        "Apocrypha x3",
+        "Brainpan x2, Misfit, Apocrypha"
+    ],
+    [
+        "Brainpan x3",
+        "Dragon",
+        "Behemoth, Misfit x2",
+        "Behemoth x2",
+        "Ninja x2, Platinum Dragon",
+        "Grenade",
+        "Chimera, Devourer x2",
+        "Briareus x2"
+    ],
+    [
+        "Peeper x2",
+        "Peeper x3",
+        "Land Ray, Peeper x2",
+        "Black Dragon",
+        "Daedalus, Ahriman",
+        "Fafnir x2",
+        "Fafnir x4",
+        "Killer Mantis, Fafnir"
+    ],
+    [
+        "Killer Mantis x2, Fafnir",
+        "Murussu, Gigantoad x2",
+        "Luna Wolf, Rukh",
+        "Luna Wolf x2",
+        "Rukh, Murussu, Gigantoad",
+        "Cherry, Ahriman x2",
+        "Ahriman x3",
+        "Zokka x2, Nightwalker"
+    ],
+    [
+        "None",
+        "Scorpion x3",
+        "Intangir",
+        "Nightwalker x4",
+        "Vector Chimera x2",
+        "Devoahan",
+        "Devoahan, Delta Beetle x2",
+        "Vampire Thorn x2, Lizard"
+    ],
+    [
+        "Vampire Thorn x2",
+        "Delta Beetle x4",
+        "Vampire Thorn x2, Delta Beetle",
+        "Devoahan, Lizard",
+        "Cancer x2, Desert Hare x2",
+        "Cactuar",
+        "Sandhorse x2",
+        "Sandhorse, Cancer x2"
+    ],
+    [
+        "Oceanus",
+        "Oceanus, Desert Hare x3",
+        "Fiend Dragon x2",
+        "Landworm",
+        "Humpty x3",
+        "Cruller, Humpty x2",
+        "Humpty x4",
+        "Neck Hunter x2"
+    ],
+    [
+        "Neck Hunter, Cruller, Humpty x2",
+        "Dante",
+        "Dropper x3",
+        "Tonberries x3",
+        "Marchosias",
+        "Slagworm",
+        "Marchosias, Deepeye x2",
+        "Bogy x2"
+    ],
+    [
+        "Deepeye x6",
+        "Deepeye x2, Mousse x2",
+        "Mousse x3",
+        "Mousse",
+        "Borghese x2",
+        "Borghese, Cloudwraith x2",
+        "Skeletal Horror",
+        "Cloudwraith"
+    ],
+    [
+        "Cloudwraith, Exoray x2",
+        "Exoray x3",
+        "Malboro, Exoray",
+        "Malboro",
+        "None",
+        "Tonberry",
+        "Knotty x4",
+        "Tzakmaqiel, Illuyankas"
+    ],
+    [
+        "Tzakmaqiel, Knotty x3",
+        "Illuyankas x3",
+        "Anemone x2, Onion Dasher",
+        "Anemone x4",
+        "Illuyankas, Onion Dasher x2",
+        "Luridan x3",
+        "Punisher x2, Devil Fist",
+        "Glasya Labolas"
+    ],
+    [
+        "Glasya Labolas, Mugbear, Devil Fist",
+        "Mugbear",
+        "Luridan x6",
+        "Mugbear, Punisher",
+        "Twinscythe",
+        "Twinscythe x2",
+        "Gorgimera",
+        "Vector Lythos x4"
+    ],
+    [
+        "Primeval Dragon, Great Malboro",
+        "Garm x3",
+        "Test Rider",
+        "Lukhavi, Garm x2",
+        "Wizard x3",
+        "Wizard x2, Psychos x3",
+        "Garm x2, Psychos x2",
+        "Psychos x6"
+    ],
+    [
+        "Magna Roader x2 (Yellow), Magna Roader (Brown)",
+        "Magna Roader (Yellow), Magna Roader x2 (Brown)",
+        "Primeval Dragon x2",
+        "None",
+        "Blade Dancer x2, Crusher x2",
+        "Caladrius x2, Coeurl Cat, Crusher x2",
+        "Caladrius x2",
+        "Blade Dancer, Coeurl Cat x4"
+    ],
+    [
+        "Misty x2",
+        "Rafflesia x3",
+        "Still Life",
+        "Aspidochelon x2",
+        "Mahadeva",
+        "Aspidochelon, Moonform, Creature",
+        "Moonform x3",
+        "Moonform, Medusa Chicken x3"
+    ],
+    [
+        "Sorath, Warlock, Creature",
+        "Sorath x2",
+        "Warlock, Medusa Chicken x2, Creature x2",
+        "Great Behemoth, Vector Lythos x2",
+        "Fiend Dragon",
+        "Devil x2",
+        "Devil, Figaro Lizard x2",
+        "Lunatys x2, Figaro Lizard x2"
+    ],
+    [
+        "Lunatys",
+        "Armored Weapon",
+        "Enuo x2",
+        "Enuo, Devil, Figaro Lizard",
+        "Lunatys x4",
+        "Al Jabr x2",
+        "Samurai, Al Jabr x2",
+        "Pluto Armor x2"
+    ],
+    [
+        "Coco, Alluring Rider",
+        "Pluto Armor, Schmidt",
+        "Weredragon, Parasite x3",
+        "Alluring Rider, Pandora x3",
+        "Weredragon",
+        "Coco, Samurai, Suriander",
+        "Suriander, Pandora, Parasite x2",
+        "Crawler x3"
+    ],
+    [
+        "Tyrannosaur x2",
+        "Tyrannosaur",
+        "Brachiosaur",
+        "Greater Mantis, Sprinter, Lycaon x2",
+        "Leap Frog x4",
+        "Greater Mantis x2",
+        "Basilisk x2, Leap Frog",
+        "Tumbleweed x4"
+    ],
+    [
+        "Sprinter x2, Lycaon x2",
+        "Great Behemoth, Great Malboro, Vector Lythos",
+        "Great Malboro x3",
+        "Vasegiatta",
+        "Vasegiatta, Purusa",
+        "Purusa, Gloomwind",
+        "Gloomwind x3",
+        "None"
+    ],
+    [
+        "Face x2",
+        "Clymenus x3",
+        "Face, Zeveak, Necromancer x2",
+        "Clymenus x2, Necromancer",
+        "Seaflower x5",
+        "Ouroboros, Seaflower x2",
+        "Chaos Dragon, Ouroboros, Seaflower x2",
+        "Galypdes, Chaos Dragon x2"
+    ],
+    [
+        "None",
+        "None",
+        "Kamui x2",
+        "Covert, Kamui",
+        "Wartpuck x2",
+        "Shambling Corpse x2",
+        "Amduscias, Covert x2",
+        "Amduscias, Baalzephon"
+    ],
+    [
+        "Baalzephon x2, Shambling Corpse x2",
+        "Wartpuck, Kamui",
+        "None",
+        "Magic Urn x2",
+        "Flan x6",
+        "Flan x4",
+        "None",
+        "None"
+    ],
+    [
+        "Destroyer x2",
+        "Lenergia x2, Destroyer",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+    ],
+    [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "Vector Hound x2, Commander",
+        "Vector Hound x2",
+        "Cartagra, Acrophies x2"
+    ],
+    [
+        "Gold Bear, Acrophies",
+        "Cartagra x3",
+        "Acrophies x2",
+        "Darkside x2",
+        "Darkside, Specter, Eukaryote x3",
+        "Valeor, Wild Rat",
+        "Valeor x3",
+        "Valeor x2, Wild Rat x3"
+    ],
+    [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+    ],
+    [
+        "None",
+        "None",
+        "None",
+        "InnoSent, Fortis",
+        "Fortis x2",
+        "None",
+        "Duel Armor x2, Death Machine",
+        "Gamma"
+    ],
+    [
+        "InnoSent x3",
+        "Junk x3",
+        "None",
+        "None",
+        "Proto Armor, Onion Knight x2",
+        "Onion Knight x5",
+        "Magna Roader x2 (Purple)",
+        "Magna Roader x4 (Red)"
+    ],
+    [
+        "None",
+        "None",
+        "Templar x2, Imperial Soldier x2",
+        "Balloon x4",
+        "Imperial Soldier x2",
+        "Death Machine, Metal Hitman x4",
+        "Metal Hitman x3",
+        "Duel Armor, Fortis"
+    ],
+    [
+        "Sergeant x4",
+        "None",
+        "Sergeant",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+    ],
+    [
+        "Behemoth King (Undead)",
+        "Dark Force x2",
+        "Yojimbo x2, Dark Force",
+        "Demon Knight, Yojimbo",
+        "Outsider x2, Cherry",
+        "Mover x3",
+        "Muud Suud",
+        "Daedalus x2"
+    ],
+    [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+    ],
+    [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+    ],
+    [
+        "None",
+        "None",
+        "None",
+        "None",
+        "Behemoth King (Living)",
+        "None",
+        "None",
+        "None"
+    ],
+    [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+    ],
+    [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+    ],
+    [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+    ],
+    [
+        "None",
+        "Holy Dragon",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+    ],
+    [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+    ],
+    [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+    ],
+    [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+    ]
+]
