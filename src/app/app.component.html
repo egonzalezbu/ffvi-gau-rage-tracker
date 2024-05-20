@@ -1,100 +1,111 @@
 <div class="container">
-  <div class="row mt-3">
-    <div class="accordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Enemigos Encontrados
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse">
-          <div class="accordion-body">
-            <div class="row">
-              @for (beast of bestiary; track $index) {
-              <div class="col-3 form-check">
-                <input class="form-check-input" type="checkbox" [(ngModel)]="obtainedBestiary[beast]"
-                  (ngModelChange)="newBeastValue(beast, $event)">
-                <label class="form-check-label" for="">
-                  {{$index + 1}}.- {{beast}}
-                </label>
+  @if (loading) {
+    <div class="vh-100 text-center align-content-around">
+      <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+        <span output="status">Cargando...</span>
+      </button>
+    </div>
+  }
+  @if (!loading) {
+    <div class="row mt-3">
+      <div class="accordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Enemigos Encontrados
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <div class="row">
+                @for (beast of bestiary; track $index) {
+                <div class="col-3 form-check">
+                  <input class="form-check-input" type="checkbox" [(ngModel)]="obtainedBestiary[beast]"
+                    (ngModelChange)="newBeastValue(beast, $event)">
+                  <label class="form-check-label" for="">
+                    {{$index + 1}}.- {{beast}}
+                  </label>
+                </div>
+                }
               </div>
-              }
             </div>
           </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-            Lista de Rages
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse">
-          <div class="accordion-body">
-            <div class="row">
-              @for (rage of rages; track $index) {
-              <div class="col-3 form-check">
-                <input class="form-check-input" type="checkbox" [(ngModel)]="obtainedRages[rage]"
-                  (ngModelChange)="newRageValue(rage, $event)">
-                <label class="form-check-label" for="">
-                  {{rage}}
-                </label>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              Lista de Rages
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <div class="row">
+                @for (rage of rages; track $index) {
+                <div class="col-4 form-check">
+                  <input class="form-check-input" type="checkbox" [(ngModel)]="obtainedRages[rage]"
+                    (ngModelChange)="newRageValue(rage, $event)">
+                  <label class="form-check-label" for="">
+                    {{rage}}
+                  </label>
+                </div>
+                }
               </div>
-              }
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="row mt-3">
-    <div class="card">
-      <div class="card-header">
-        Buscar Ronda
-      </div>
-      <div class="input-group">
-        <span class="input-group-text" id="basic-addon1">Enemigos:</span>
-        <input type="text" class="form-control" placeholder="Enemigos" [(ngModel)]="enemySearch">
-      </div>
-      <ul class="list-group list-group-flush">
-        @for (group of filterByName(); track $index) {
-        <li class="list-group-item">{{group}}</li>
-        }
-      </ul>
-    </div>
-  </div>
-  <div class="row mt-3">
-    <div class="card">
-      <div class="card-body">
+    <div class="row mt-3">
+      <div class="card">
+        <div class="card-header">
+          Buscar Ronda
+        </div>
         <div class="input-group">
-          <span class="input-group-text" id="basic-addon1">Ronda:</span>
-          <input type="number" min="1" max="64" class="form-control" placeholder="Ronda"
-            [(ngModel)]="actualGroupNumber">
+          <span class="input-group-text" id="basic-addon1">Enemigos:</span>
+          <input type="text" class="form-control" placeholder="Enemigos" [(ngModel)]="enemySearch">
+        </div>
+        <ul class="list-group list-group-flush">
+          @for (group of filterByName(); track $index) {
+          <li class="list-group-item" (click)="setActualGroupNumber(group.round)">Ronda {{group.round}}: {{group.group}}</li>
+          }
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="card">
+        <div class="card-body">
+          <div class="input-group">
+            <span class="input-group-text" id="basic-addon1">Ronda:</span>
+            <input type="number" min="1" max="64" class="form-control" placeholder="Ronda"
+              [(ngModel)]="actualGroupNumber" (ngModelChange)="updateStorage()">
+            <button class="btn btn-danger" (click)="addActualGroupNumber(-1)">-</button>
+            <button class="btn btn-success" (click)="addActualGroupNumber(1)">+</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="row mt-3">
-    <div class="card">
-      <div class="card-header">
-        Siguiente Ronda
-      </div>
-      <ul class="list-group list-group-flush">
-        @for (battle of battleGroups[actualGroupNumber - 1]; track $index) {
-        <li class="list-group-item">
-          @for (enemy of battle.split(', '); track $index) {
-          <span class="badge" [class.text-bg-danger]="!isObtained(enemy) && isInBestiary(enemy)"
-            [class.text-bg-success]="isObtained(enemy)" [class.text-bg-warning]="!isInBestiary(enemy)">
-            {{enemy}}
-          </span>
+    <div class="row mt-3 mb-3">
+      <div class="card">
+        <div class="card-header">
+          Siguiente Ronda
+        </div>
+        <ul class="list-group list-group-flush">
+          @for (battle of battleGroups[actualGroupNumber - 1]; track $index) {
+          <li class="list-group-item">
+            @for (enemy of battle.split(', '); track $index) {
+            <span class="badge" [class]="badgeColorClass(enemy)">
+              {{enemy}}
+            </span>
+            }
+          </li>
           }
-        </li>
-        }
-      </ul>
+        </ul>
+      </div>
     </div>
-  </div>
+  }
 </div>
 
 <router-outlet />

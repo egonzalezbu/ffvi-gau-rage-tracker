@@ -5,6 +5,7 @@ import rages from '../assets/rages.json';
 import bestiary from '../assets/bestiary.json';
 import 'bootstrap';
 import { FormsModule } from '@angular/forms';
+import { FirebaseService } from './services/firebase.service';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
+  public loading: boolean = true;
   public battleGroups = battleGroups;
   public rages = rages;
   public bestiary = bestiary;
@@ -22,12 +24,24 @@ export class AppComponent implements OnInit {
   public actualGroupNumber: number = 1;
   public enemySearch: string = '';
 
-  ngOnInit(): void {
-    this.readStorage();
+  constructor(private firebaseService: FirebaseService){}
+
+  async ngOnInit() {
+    if (!(await this.firebaseService.currentUser)) {
+      await this.firebaseService.login();
+    }
+    const userData = await this.firebaseService.getUserData();
+    if (userData) {
+      const {actualGroupNumber, obtainedBestiary, obtainedRages} = userData;
+      this.actualGroupNumber = actualGroupNumber;
+      this.obtainedBestiary = obtainedBestiary;
+      this.obtainedRages = obtainedRages;
+    }
+    this.loading = false;
   }
 
   filterByName() {
-    const filtered: string[] = [];
+    const filtered: {round: number; group: string}[] = [];
     if (this.enemySearch === '') return filtered;
     for (let i = 0; i < this.battleGroups.length; i++) {
       for (const group of this.battleGroups[i]) {
@@ -36,26 +50,55 @@ export class AppComponent implements OnInit {
             .toLocaleLowerCase()
             .indexOf(this.enemySearch.toLocaleLowerCase()) !== -1
         )
-          filtered.push(`Ronda ${i + 1}: ${group}`);
+          filtered.push({round: i + 1, group});
       }
     }
     return filtered;
   }
 
+  setActualGroupNumber(round: number) {
+    if (round < 1 || round > 64) return;
+    this.actualGroupNumber = round;
+    this.updateStorage();
+  }
+
+  addActualGroupNumber(amount: number) {
+    const newRoundNumber = this.actualGroupNumber + amount;
+    if (newRoundNumber < 1 || newRoundNumber > 64) return;
+    this.actualGroupNumber = newRoundNumber;
+    this.updateStorage();
+  }
+
   isObtained(enemy: string) {
     const currentKey = Object.keys(this.obtainedRages).find(
       (obtained) =>
-        enemy.toLocaleLowerCase().indexOf(obtained.toLocaleLowerCase()) != -1
+        this.removeQty(enemy).toLocaleLowerCase().indexOf(obtained.toLocaleLowerCase()) != -1
     );
     return currentKey && this.obtainedRages[currentKey] === true;
+  }
+
+  removeQty(enemy: string) {
+    return enemy.replace(/ x\d/ig,'');
+  }
+
+  isARage(enemy: string): boolean {
+    return rages.find(rage => enemy.toLocaleLowerCase().indexOf(rage.toLocaleLowerCase()) !== -1) !== undefined;
   }
 
   isInBestiary(enemy: string) {
     const currentKey = Object.keys(this.obtainedBestiary).find(
       (obtained) =>
-        enemy.toLocaleLowerCase().indexOf(obtained.toLocaleLowerCase()) != -1
+        this.removeQty(enemy).toLocaleLowerCase().indexOf(obtained.toLocaleLowerCase()) != -1
     );
     return currentKey && this.obtainedBestiary[currentKey] === true;
+  }
+
+  badgeColorClass(enemy: string) {
+    if (enemy === 'None') return 'text-bg-warning';
+    if (!this.isARage(enemy)) return 'text-bg-secondary';
+    if (this.isObtained(enemy)) return 'text-bg-success';
+    if (this.isInBestiary(enemy)) return 'text-bg-danger';
+    return 'text-bg-warning';
   }
 
   newRageValue(rage: string, value: boolean) {
@@ -68,30 +111,11 @@ export class AppComponent implements OnInit {
     this.updateStorage();
   }
 
-  readStorage() {
-    try {
-      this.obtainedRages = JSON.parse(
-        localStorage.getItem('obtainedRages') as string
-      );
-      if (!this.obtainedRages) this.obtainedRages = {};
-    } catch (_) {
-      this.obtainedRages = {};
-    }
-    try {
-      this.obtainedBestiary = JSON.parse(
-        localStorage.getItem('obtainedBestiary') as string
-      );
-      if (!this.obtainedBestiary) this.obtainedBestiary = {};
-    } catch (_) {
-      this.obtainedBestiary = {};
-    }
-  }
-
   updateStorage() {
-    localStorage.setItem('obtainedRages', JSON.stringify(this.obtainedRages));
-    localStorage.setItem(
-      'obtainedBestiary',
-      JSON.stringify(this.obtainedBestiary)
-    );
+    this.firebaseService.setUserData({
+      actualGroupNumber: this.actualGroupNumber,
+      obtainedBestiary: this.obtainedBestiary,
+      obtainedRages: this.obtainedRages,
+    });
   }
 }

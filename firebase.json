@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/ffvi-gau-rage-tracker/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
